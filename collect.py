@@ -19,4 +19,3 @@ for name, url in datalist:
         for s in soup:
             f.write(s.text)
     f.close()
-    break
