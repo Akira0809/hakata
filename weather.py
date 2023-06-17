@@ -7,4 +7,7 @@ def weather_check(name): #nameに都道府県名を入れるとjsonファイル�
     url = "https://weather.tsukumijima.net/api/forecast/city/" + code
     r = requests.get(url)
     text = r.json()
-    return text
+    weather = text["forecasts"][0]["telop"]
+    return weather
+
+print(weather_check(input("県名 = ")))
