@@ -9,5 +9,5 @@ def weather_check(name): #nameに都道府県名を入れるとjsonファイル�
     text = r.json()
     weather = text["forecasts"][0]["telop"]
     return weather
-#https://docs.google.com/presentation/d/1vaHj18LX2AXSe3E1ZkPz5WhjM295sHoXBrKXgDEDd6k/edit?usp=sharing
+    
 print(weather_check(input("県名 = ")))
